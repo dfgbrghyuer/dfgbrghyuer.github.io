@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحه فیلتر کردن حساب</title>
+    <link href="https://fonts.googleapis.com/css2?family=Vazir&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fil.css">
+</head>
+<body>
+    <div class="container">
+        <div class="main-box">
+            <h1>فیلتر کردن حساب کاربر</h1>
+            <input type="text" id="user-id" placeholder="آیدی کاربر را وارد کنید" />
+            <button onclick="startFiltering()">فیلتر کن</button>
+            
+            <div id="status-message" class="status-message" style="display:none;">
+                <p>در حال فیلتر کردن حساب، لطفاً بین 1 تا 2 دقیقه صبر کنید...</p>
+            </div>
+            
+            <div id="server-message" class="status-message" style="display:none;">
+                <p>پیغام سرور: خاموش است.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="fil.js"></script>
+</body>
+</html>
